@@ -18,9 +18,9 @@ from django.urls import path, include
 from main.views import homepage,customer_page,admin_page,admin_dashboard,customer_dashboard,customer_register,about_page
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    path('https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/api/', include('user.urls')),
-    path('https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/api/',include('customers.urls')),
+    path('admin/', admin.site.urls),
+    path('api/', include('user.urls')),
+    path('api/',include('customers.urls')),
     path('api/',include('tablelist.urls')),
     path('api/',include('booktable.urls')),
      path('', homepage, name='homepage'), 
