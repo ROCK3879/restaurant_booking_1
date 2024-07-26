@@ -516,7 +516,7 @@
                 };
                 console.log("Booking Data", bookingData);
 
-                return fetch("http://127.0.0.1:8000/api/booktable/create/", {
+                return fetch("/api/booktable/create/", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -557,7 +557,7 @@
 
         // Function to fetch and map table names
         function getTablesMap() {
-          return fetch(`http://127.0.0.1:8000/api/tables/`)
+          return fetch(`/api/tables/`)
             .then((response) => response.json())
             .then((tables) => {
               // Map table IDs to table names
@@ -572,7 +572,7 @@
           .then((customerId) => {
             return getTablesMap()
               .then(() => {
-                return fetch(`http://127.0.0.1:8000/api/booktables/`);
+                return fetch(`/api/booktables/`);
               })
               .then((response) => response.json())
               .then((bookings) => {
@@ -614,7 +614,7 @@
 
       // Function to submit updated booking
       function updateBooking(bookingId) {
-        fetch(`http://127.0.0.1:8000/api/booktable/${bookingId}/`)
+        fetch(`/api/booktable/${bookingId}/`)
           .then((response) => response.json())
           .then((booking) => {
             document.getElementById("update-booking-id").value = bookingId;
@@ -676,7 +676,7 @@
               booktable_guests: booktable_guests,
             };
 
-            fetch(`http://127.0.0.1:8000/api/booktable/update/${bookingId}/`, {
+            fetch(`/api/booktable/update/${bookingId}/`, {
               method: "PUT",
               headers: {
                 "Content-Type": "application/json",
@@ -715,7 +715,7 @@
         // Confirm cancellation
         {
           console.log("Booking Id", bookingId);
-          fetch(`http://127.0.0.1:8000/api/booktable/${bookingId}/`, {
+          fetch(`/api/booktable/${bookingId}/`, {
             method: "DELETE",
           })
             .then((response) => {
