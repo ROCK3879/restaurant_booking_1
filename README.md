@@ -1,26 +1,17 @@
 # Restaurant Booking Website
+
 The Restaurant Booking Website is a restaurant website that enables customers to book a table online.
 People who would like to book a table online in a restaurant would benefit from using this website.
 
 ![Screenshot demonstrating website responsiveness on all screen sizes](#)
 
+
 # Overview
 
-The Restaurant Booking Website is a modern web application built using Django and PostgreSQL, which allows customers to create an account and log in to the website. Customers can select a table, date, time, and number of guests for their reservations, ensuring the guest count does not exceed the table's maximum@ capacity. Restaurant owners can manage their bookings, view upcoming reservations, and manage customers through an intuitive admin panel.
+The Restaurant Booking Website is a web application built using Django and PostgreSQL, which allows customers to create an account and log in to the website. Customers can select a table, date, time, and number of guests for their reservations, ensuring the guest count does not exceed the table's maximum capacity. Restaurant owners can manage their bookings, view upcoming reservations, and manage customers through an intuitive admin panel.
+
 
 # User stories
-
-## Admin wants to add new items to the menu
-
-As an admin, I want to add new items to the menu so that customers can see new food options.
-
-## Admin wants to remove items from the menu
-
-As an admin, I want to remove items from the menu so that customers do not see options that are no longer available.
-
-## Admin wants to edit existing menu items
-
-As an admin, I want to edit existing menu items so that I can update the details if they change.
 
 ## Admin wants to view all bookings
 
@@ -60,11 +51,12 @@ As a user, I can register on the restaurant website so that I can sign in to my 
 
 ## User wants to sign in to their account on the restaurant website
 
-As a user, I can sign in to my account on the restaurant website so that I I can book a table.
+As a user, I can sign in to my account on the restaurant website so that I can book a table.
 
 ## User wants to sign out of their account on the restaurant website
 
 As a user, I can sign out of my account on the restaurant website so that I my account stays safe.
+
 
 # Features
 
@@ -74,141 +66,139 @@ Booking Management: View, edit, and cancel reservations.
 Admin Panel: Manage restaurants, tables, reservations, and customers with full CRUD operations.
 RESTful API: Access and manage users, tables, and reservations through a comprehensive API.
 
+
 ## Navigation bar
 
-The fully responsive navigation bar is featured on all pages, includes links to each of the logo, home, menu, register, sign in, my booking, sign out, and book a table pages and is identical on each page to allow for easy navigation.
-This section will allow a user to easily navigate from page to page across all devices.
+The fully responsive navigation bar is featured on all pages, includes links to each of the home, gallery, menu, contact pages and register, sign in, my booking, sign out, and book a table forms and is identical on each page to allow for easy navigation.
+This section will allow a user to easily navigate from page to page.
 
-![Navigation bar](#)
+![Navigation bar](/assets/readme_image/navigation_bar.jpg)
 
 
 ## Home page
 
-- The home page shows .................................
-- Below are screenshot of the home page.
+The home page shows a close-up of a part of the restaurant with a blurry background and inscription "Welcome to Restaurant No1"
+"Experience the best food and drinks in town".
+Buttons
+"Our Menu" / "Log In" / "Register Now"
+Below are screenshot of the home page.
 
-![Hero image](#)
+![Home page](/assets/readme_image/home_page.jpg)
 
 
-## "About Us" section
+## Gallery page
 
-This section is about us section.
-It tells a user that "Restaurant" is a cozy, small family-owned restaurant in Germany that offers its customers various, tasty, healthy meals and drinks.
+This gallery page changes the about us section because a picture speaks louder than words. Here there is a possibility to expand the gallery with additional images as needed.
+It tells a user about "Restaurant No1" is a family-owned restaurant in Germany that offers its customers various, tasty, healthy meals and drinks.
 Additionally, it emphasizes that a customer can easily book a table online as soon as they will have registered on the restaurant website.
-Below are screenshot of the "About Us" section.
+Below are screenshot of the "Gallery".
 
-!["About Us" section](#)
+![Gallery page 1](/assets/readme_image/gallery_page_1.jpg)
 
-## Footer
+![Gallery page 2](/assets/readme_image/gallery_page_2.jpg)
 
-The footer is featured, identical, and fully responsive on all pages of the website.
-It demonstrates the restaurant contact info and social networks.
-Each social media link opens in a new tab.
-Below are three screenshots of the footer.
+![Gallery page 3](/assets/readme_image/gallery_page_3.jpg)
 
-![Footer](#)
 
 ## Menu
 
 The restaurant menu exist on the menu page.
-It contains twelve items, each has an image.
-All meals images are fully responsive on all screen sizes.
-- Below are various screenshots of the restaurant menu.
+It contains only 3 items, each has an image. The menu is presented with three options and has the possibility to increase the offer if necessary.
+All meals and drinks images are fully responsive on all screen sizes.
+Below are screenshot of the restaurant menu.
 
-![Menu](#)
+![Menu page](#)
+
+
+## Contact page
+
+The restaurant contact form exist on the navigation bar.
+It contains 3 field and 1 submit button. The contact form is presented with fields: Name, Email, Message through this form, the user can get in touch with the restaurant staff if they have additional questions.
+Below are screenshot of the restaurant contact page.
+
+![Contact page empty](/assets/readme_image/contact_page_empty.jpg)
+
+![Contact page full](/assets/readme_image/contact_page_full.jpg)
+
+![Contact page with error](/assets/readme_image/contact_page_with_error.jpg)
+
 
 ## Register
 
 On the register page, there is a register form that enables a customer to register by entering a username, an email, and a password.
 A user must confirm their password.
-The register form urges a user to enter a username that is at least six characters long. If it was not, an error message will appear.
 The register form examines the right formula of an email. If its formula was not correct, an error message will appear.
-As a user enters their password, it must be at least eight characters long, otherwise an error message will appear.
-As a user confirms their password, the two must be identical. If they are not, an error message will become visible.
+As a user enters their password, and user confirms their password, the two must be identical. If they are not, an error message will become visible.
 Below are eight screenshots of the register form.
 
-![Register 1](#)
+![Register customer error password not match](/assets/readme_image/register_customer_error_password_not_match.jpg)
 
-![Register 2](#)
-
-![Register 3](#)
-
-![Register 4](#)
-
-![Register 5](#)
-
-![Register 6](#)
+![Register customer error email](/assets/readme_image/register_customer_error_email.jpg)
 
 
+## Login
 
-## Sign In
-
-A sign-in form exists on the sign-in page.
-To sign in, a registered user must enter their username and password.
-A registered user must enter a valid username and password; if either a username or a password is not valid, an error message arises.
-As a user successfully signs in, a confirmation message materializes, and the user will be instantly taken into the booking page to be able to book a restaurant table.
+A Login button exists on the home page.
+To login, a registered user must enter their username and password.
+A registered user must enter a valid username and password, if either a username or a password is not valid, an error message arises.
+As a user successfully signs in, a confirmation message materializes, and the user can go into the booking page to be able to book a restaurant table.
 Beneath are screenshots that demonstrate the sign-in form.
 
-![Sign-in form 1](#)
+![Login customer username or password not valid](/assets/readme_image/login_customer_username_or_password_not_valid.jpg)
 
-![Sign-in form 2](#)
-
-![Sign-in form 3](#)
-
-![Sign-in form 4](#)
+![Login customer](/assets/readme_image/login_customer.jpg)
 
 
 ## Book a table
 
-The "Book a table" button appears on the nav bar only after a user will have signed in.
-A signed-in user can book a table in restaurant by means of a booking form that is built in the "Book a table" page.
-To book a table, a user should choose a certain table for a specific date and time; the user should also choose a certain number of guests.
+The New Booking, My booking and Logout button appears on the nav bar only after a user will have Login.
+A logedin user can book a table in restaurant by means of a booking form that is built in the "New Booking" page.
+To book a table, a user should choose a certain table for a specific date and time, the user should also choose a certain number of guests.
 If the table, date, and time that a user chooses are already booked, an error message appears and encourages the user to choose another table, date, or time to be able to book a table.
 If a user chooses a number of guests that is not compatible with the capacity of the table that the user wants to book, an error message pops up and notifies the user about that.
 As a user successfully books a table, a confirmation message informs the user about that.
 Underneath are screenshots that illustrate the details of signing in above. 
 
-![Booking form 1](#)
+![Booking new booking customer](/assets/readme_image/new_booking_customer.jpg)
 
-![Booking form 2](#)
+![Booking new booking customer alert already booked](/assets/readme_image/new_booking_customer_alert_already_booked.jpg)
 
-![Booking form 3](#)
+![Booking new booking customer alert number of guests not allowed](/assets/readme_image/new_booking_customer_alert_number_of_guests_not_allowed.jpg)
 
-![Booking form 4](#)
+![Booking new booking customer alert alrady booked for this date](/assets/readme_image/new_booking_customer_alert_alrady_booked_for_this_date.jpg)
 
-![Booking form 5](#)
+![Booking new booking customer alert booked successfully](/assets/readme_image/new_booking_customer_alert_booked_successfully.jpg)
+
 
 ## My Bookings
 
-The "My Bookings" button appears on the nav bar only after a user will have signed in.
-Clicking on "My Bookings" will open the "My Bookings" page on the website.
-On "My Bookings" page, a signed-in user can see their bookings, update them, or cancel them.
-On each booking, there are all the details of that booking; underneath, there are two buttons: "Update Booking" and "Cancel Booking".
-If a user clicks inside a certain booking on the "Update Booking" button, a form for updating a booking opens up prepopulated with the settings of the booking that the customer wants to update. The user can choose new settings to be applied for that booking; if these are available, that booking will be updated and the user will be redirected back into their "My Bookings" page, where they can find their updated booking. If these are not available, however, an error message arises, tells the user that those settings are already booked, and urges the user to choose other settings to be able to update their booking.
-If a user clicks inside a certain booking on the "Cancel Booking" button, a message pops up and asks the user if they are sure that they want to cancel that booking. If the user confirms their wish to cancel that booking by clicking on "OK", that booking will be cancelled and a message comes into sight confirming that that booking has successfully been cancelled.
-Below are eight screenshots that depict the "My Bookings" form.
+The My Bookings button appears on the same nav bar as New Booking and Logout button after a user will have signed in.
+Clicking on My Bookings will open the My Bookings table on the website.
+On My Bookings page, a Logedin user can see their list of bookings, update them, cancel them or logout.
+On each booking, there are all the details of that booking, to the right there are two buttons: Edit and Cancel.
+If a user clicks inside a certain booking on the Edit button, a form for updating a booking opens up prepopulated with the settings of the booking that the customer wants to update. The user can choose new settings to be applied for that booking if these are available, that booking will be updated and the user can see into their My Bookings table, where they can find their updated booking. If these are not available, however, an error message arises, tells the user that those settings are already booked, and urges the user to choose other settings to be able to update their booking.
+If a user clicks inside a certain booking on the Cancel booking button, that booking will be cancelled and a message comes into sight confirming that that booking has successfully been cancelled.
+Below are screenshots that depict the "My Bookings" form.
 
-!["My Bookings" 1](#)
+![My Bookings customer](/assets/readme_image/my_bookings_customer.jpg)
 
-!["My Bookings" 2](#)
+![My Bookings customer logout](/assets/readme_image/my_bookings_customer_logout.jpg)
 
-!["My Bookings" 3](#)
+![My Bookings customer update booking green edit button](/assets/readme_image/my_bookings_customer_update_booking_green_edit_button.jpg)
 
-!["My Bookings" 4](#)
+![My Bookings customer update alert successfully](/assets/readme_image/my_bookings_customer_update_alert_successfully.jpg)
 
-!["My Bookings" 5](#)
+![My Bookings - already booked alert????](#)
 
-!["My Bookings" 6](#)
+![My Bookings customer cancel booking successfully](/assets/readme_image/my_bookings_customer_cancel_booking_successfully.jpg)
 
 
-## Sign Out
+## Logout
 
-The Sign Out button appears on the nav bar only after a user will have signed in.
-When a user clicks on the "Sign Out" button on the nav bar, a message appears confirming that they have successfully signed out.
+The Logout button appears on the nav bar only after a user will have login.
+When a user clicks on the "Logout" button on the nav bar, user will successfully logout and redirect to home page.
 
-![Sign Out 1](#)
-
-![Sign Out 2](#)
+![Customer_logout](/assets/readme_image/my_bookings_customer_logout.jpg)
 
 
 # Technologies Used
@@ -216,6 +206,7 @@ When a user clicks on the "Sign Out" button on the nav bar, a message appears co
 Frontend: HTML, CSS, JavaScript
 Backend: Django, Django REST framework
 Database: PostgreSQL
+
 
 # Getting Started
 
@@ -225,10 +216,11 @@ PostgreSQL
 Virtual environment tool (e.g., venv)
 Heroku CLI (for deployment)
 
+
 # Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/restaurant-booking-website.git
+   git clone https://github.com/ROCK3879/restaurant_booking_1.git
    cd restaurant_booking
 2. Set up a virtual environment:
 
@@ -284,7 +276,7 @@ source env/bin/activate # On Windows use.
 ```
 
 8. Access the application:
-   Open your web browser and go to http://127.0.0.1:8000/.
+   Open your web browser and go to http://127.0.0.1:8000/
 
 Database Model
 
