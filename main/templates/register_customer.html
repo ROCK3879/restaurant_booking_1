@@ -193,7 +193,7 @@
 
           if (response.ok) {
             showMessage("Registration successful!");
-            window.location.href = "http://127.0.0.1:8000/customer/"; // Redirect to login page
+            window.location.href = "/customer/"; // Redirect to login page
           } else {
             const result = await response.json();
             showMessage(result.error || "Registration failed!");
