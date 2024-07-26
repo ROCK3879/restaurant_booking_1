@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -44,7 +46,6 @@ CORS_ALLOW_CREDENTIALS = True
 # settings.py
 
 # URL prefix for static files
-STATIC_URL = '/static/'
 
 # Directory on the filesystem where static files are collected
 
@@ -181,3 +182,4 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+django_heroku.settings(locals())
