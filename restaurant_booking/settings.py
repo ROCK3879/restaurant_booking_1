@@ -121,14 +121,16 @@ WSGI_APPLICATION = "restaurant_booking.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "restaurantbooking",
-        "HOST":"localhost",
-        "PORT":"5433",
-        "USER":"postgres",
-        "PASSWORD":"postgres",
+        "NAME": "d2n5d4av6r34ql",
+        "HOST":"cah8ha8ra8h8i7.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com",
+        "PORT":"5432",
+        "USER":"u1gffoua8qqnc5",
+        "PASSWORD":"p7d6406e806b7a05be6c4828cb19019bc7373fb724e4c4cf2500c60ab2a2fc91a",
 
     }
 }
+
+
 
 ## User model
 AUTH_USER_MODEL = 'user.AppUser'
