@@ -19,8 +19,8 @@ from main.views import homepage,customer_page,admin_page,admin_dashboard,custome
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('api/', include('user.urls')),
-    path('api/',include('customers.urls')),
+    path('https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/api/', include('user.urls')),
+    path('https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/api/',include('customers.urls')),
     path('api/',include('tablelist.urls')),
     path('api/',include('booktable.urls')),
      path('', homepage, name='homepage'), 
