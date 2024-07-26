@@ -27,7 +27,7 @@ urlpatterns = [
     path('about/', about_page, name='about_page'),
  
       path('customer/', customer_page, name='customer_page'),
-    path('admin/', admin_page, name='admin_page'),# Set the homepage view as the root URL
+    path('adminlogin/', admin_page, name='admin_page'),# Set the homepage view as the root URL
         path('admin/dashboard/', admin_dashboard, name='admin_dashboard'),
 
         path('customer/dashboard/', customer_dashboard, name='customer_dashboard'),

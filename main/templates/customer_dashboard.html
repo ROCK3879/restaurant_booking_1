@@ -408,7 +408,7 @@
       }
       // Function to fetch customer ID based on email
       function getCustomerId(email) {
-        return fetch(`http://127.0.0.1:8000/api/customers/`)
+        return fetch(`https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/api/customers/`)
           .then((response) => response.json())
           .then((data) => {
             const customer = data.find(
@@ -424,7 +424,7 @@
 
       // Function to fetch and populate table options
       function populateTableOptions() {
-        return fetch("http://127.0.0.1:8000/api/tables/")
+        return fetch("/api/tables/")
           .then((response) => response.json())
           .then((tables) => {
             const tableSelects = document.querySelectorAll(
@@ -463,12 +463,12 @@
         // Remove the customer email from local storage
         localStorage.removeItem("adminEmail");
 
-        window.location.href = "http://127.0.0.1:8000/";
+        window.location.href = "https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/";
         // Redirect to the homepage page
       }
       // Function to validate the number of guests against the table's max capacity
       function validateGuestCount(tableid) {
-        return fetch("http://127.0.0.1:8000/api/tables/")
+        return fetch("api/tables/")
           .then((response) => response.json())
           .then((data) => {
             const table = data.find((table) => table.table_id === tableid);
