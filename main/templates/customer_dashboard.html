@@ -468,7 +468,7 @@
       }
       // Function to validate the number of guests against the table's max capacity
       function validateGuestCount(tableid) {
-        return fetch("api/tables/")
+        return fetch("/api/tables/")
           .then((response) => response.json())
           .then((data) => {
             const table = data.find((table) => table.table_id === tableid);
