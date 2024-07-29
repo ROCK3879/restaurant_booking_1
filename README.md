@@ -104,7 +104,7 @@ Below are screenshot of the "Gallery".
 ## Menu
 
 The restaurant menu exist on the menu page.
-It contains only 3 items, each has an image. The menu is presented with three options and has the possibility to increase the offer if necessary.
+It contains only 8 items, each has an image. The menu is presented with couple options and has the possibility to increase the offer if necessary.
 All meals and drinks images are fully responsive on all screen sizes.
 Below are screenshot of the restaurant menu.
 
@@ -207,6 +207,245 @@ When a user clicks on the "Logout" button on the nav bar, user will successfully
 Frontend: HTML, CSS, JavaScript
 Backend: Django, Django REST framework
 Database: PostgreSQL
+
+# Typography and color scheme
+
+Google font have been used: "Roboto" and "sans serif".
+Colors have been applied: #5a9bd4, #214d71, #008000, #957873, #ff4500, and #FFFFFF.
+
+# Wireframes
+
+I used Balsamiq wireframes for my project.
+
+# Entity relationship diagram
+
+![Diagram](/assets/readme_image/diagram.jpg)
+
+
+# Technology Overview
+
+## Visual Studio
+Visual Studio is a robust development environment I employed for writing, reviewing, integrating, and deploying code.
+
+## GitHub
+GitHub is a platform for version control and collaborative software development. I utilized it to create a central code repository and manage the deployment of Restaurant No1. This tool allows me to track changes made to the code and revert to previous versions when necessary.
+
+## Heroku
+Heroku is a cloud-based platform that enables developers to build, deploy, and scale modern applications seamlessly. Supporting multiple programming languages including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure, Heroku allows developers to focus on code rather than infrastructure. I deployed Restaurant No1 on Heroku, taking advantage of its seamless integration with GitHub.
+
+## Django & Python
+Python is a high-level, general-purpose programming language. Django, a free and open-source Python-based web framework, follows the model-template-views (MTV) architectural pattern. I utilized Django and Python to develop the core functionalities of Restaurant No1.
+
+## HTML (HyperText Markup Language)
+HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the structure and meaning of web content, making websites accessible and enhancing search engine optimization. I employed HTML to structure the content of Restaurant No1’s web pages.
+
+## CSS (Cascading Style Sheets)
+CSS is a style sheet language used for describing the presentation of a document written in HTML or XML. I used CSS to add styling to the HTML templates of Restaurant No1.
+
+## JavaScript
+JavaScript is a programming language essential for web development alongside HTML and CSS. I utilized JavaScript to enhance the functionality of customer registration, table booking, and cancellation processes for Restaurant No1.
+
+## Google Fonts
+Google Fonts enhance the visual appeal of websites. I incorporated Google fonts in Restaurant No1: "Roboto/sans-serif".
+
+## W3C HTML & CSS Validators
+The W3C provides online tools to validate HTML and CSS code by URL, file upload, or direct input. I used these validators to ensure the HTML and CSS code of Restaurant No1 adhered to web standards.
+
+## CI Python Linter
+The CI Python Linter, an online tool provided by Code Institute, was used to validate all Python files of Restaurant No1 through direct code input.
+
+## JSHint
+JSHint is an online tool for validating JavaScript code. I used JSHint to ensure the JavaScript code in Restaurant No1 was error-free and followed best practices.
+
+## Balsamiq Wireframes
+Balsamiq Wireframes is a graphical user interface wireframe builder application. It allows designers to arrange pre-built widgets using a drag-and-drop editor. I utilized Balsamiq to create wireframes for Restaurant No1.
+
+## Lucidchart
+Lucidchart is a web-based diagramming application that facilitates collaborative drawing, revising, and sharing of charts and diagrams. I used it to create the entity relationship diagram for Restaurant No1.
+
+## Pexels
+Pexels.com is a platform that provides high-quality and completely free stock photos licensed under the Pexels license. I used Pexels.com to source and manage visual content for Restaurant No1.
+
+## ElephantSQL
+ElephantSQL is a PostgreSQL database hosting service that manages administrative tasks such as installation, upgrades, and backups. I utilized ElephantSQL to host the PostgreSQL database for Restaurant No1.
+
+## Gunicorn
+Gunicorn is a WSGI server that acts as an intermediary between web servers and Python applications. I installed Gunicorn in Restaurant No1 to deploy the Django application on Heroku.
+
+# Code validation
+
+## HTML
+I validated it by means of the W3C HTML validator.
+Below is a screenshot that documents this validation; errors were shown.
+
+![W3C HTML Home Page validator 1/2](/assets/readme_image/home_html_validator1.jpg)
+
+![W3C HTML Home Page validator 2/2](/assets/readme_image/home_html_validator2.jpg)
+
+![W3C HTML Admin validator](/assets/readme_image/admin_html_validator1.jpg)
+
+![W3C HTML Customer validator](/assets/readme_image/customer_html_validator.jpg)
+
+![W3C HTML Admin Dashboard validator 1/2](/assets/readme_image/admin_dashboard_html_validator1.jpg)
+
+![W3C HTML Admin Dashboard validator 2/2](/assets/readme_image/admin_dashboard_html_validator2.jpg)
+
+![W3C HTML Registar Customer validator](/assets/readme_image/registar_customer_html_validator.jpg)
+
+![W3C HTML Customer Dashboard validator](/assets/readme_image/customer_dashboard_html_validator.jpg)
+
+## CSS
+I validated it by means of the W3C CSS validator.
+Below is a screenshot that documents this validation; errors were shown.
+
+![W3C CSS Home Page validator](/assets/readme_image/homepage_css_validator.jpg)
+
+![W3C CSS Admin validator](/assets/readme_image/admin_css_validator.jpg)
+
+![W3C CSS Admin Dashboard validator](/assets/readme_image/admin_dashboard_css_validator.jpg)
+
+![W3C CSS Customer validator](/assets/readme_image/customer_css_validator.jpg)
+
+![W3C CSS Customer Dashboard validator](/assets/readme_image/customer_dashboard_css_validator.jpg)
+
+![W3C CSS Register Customer validator](/assets/readme_image/register_customer_css_validator.jpg)
+
+## CI Python Linter
+I validated it by means of CI Python Linter.
+Below is a screenshot that documents this validation; errors were shown.
+
+![CI Python Linter admin.py ](/assets/readme_image/admin.py.jpg)
+
+![CI Python Linter apps.py](/assets/readme_image/apps.py.jpg)
+
+![CI Python Linter tests.py](/assets/readme_image/tests.py.jpg)
+
+![CI Python Linter views.py](/assets/readme_image/views.py.jpg)
+
+![CI Python Linter manage.py](/assets/readme_image/manage.py.jpg)
+
+![CI Python Linter models.py](/assets/readme_image/models.py.jpg)
+
+
+# Test Cases
+
+## User Registration and Login
+
+### Test Case: User Registration
+
+Description: Verify that a new user can register successfully.
+Steps: Navigate to the registration page.
+Fill in the required fields (username, email, password, etc.).
+Submit the registration form.
+Verify that a confirmation message is displayed.
+Verify that the user is redirected to the login page.
+Expected Result: User is registered successfully and redirected to the login page.
+
+### Test Case: User Login
+
+Description: Verify that a registered user can log in successfully.
+Steps: Navigate to the login page.
+Enter valid credentials (username and password).
+Submit the login form.
+Verify that the user is redirected to my bookings form.
+Expected Result: User is logged in successfully and redirected to the my bookings form.
+
+## Table Booking
+
+### Test Case: Table Booking
+
+Description: Verify that a user can book a table successfully.
+Steps: Log in to the website.
+Navigate to the table booking form.
+Select a date, time, and number of guests.
+Submit the booking form.
+Verify that a confirmation message is displayed.
+Verify that the booking details are displayed in the user's account.
+Expected Result: Table is booked successfully and booking details are displayed in the user's account.
+
+### Test Case: Table Booking Cancellation
+
+Description: Verify that a user can cancel a table booking.
+Steps: Log in to the website.
+Navigate to the user's account page.
+Locate the table booking to be cancelled.
+Click the cancel button next to the booking.
+Confirm the cancellation.
+Verify that the booking is removed from the user's account.
+Expected Result: Table booking is cancelled and removed from the user's account.
+
+## Menu and Orders
+
+### Test Case: View Menu
+
+Description: Verify that users can view the restaurant menu.
+Steps: Navigate to the menu page.
+Verify that the menu items are displayed with details (name, description, price).
+Expected Result: Menu items are displayed correctly with all details.
+
+## Contact and Feedback
+
+### Test Case: Submit Contact Form
+
+Description: Verify that a user can submit a contact form successfully.
+Steps: Navigate to the contact page.
+Fill in the required fields (name, email, message).
+Submit the contact form.
+Expected Result: Contact form is submitted successfully.
+
+## General Functionality
+
+### Test Case: Responsive Design
+
+Description: Verify that the website is responsive and displays correctly on various devices.
+Steps: Open the website on different devices (desktop, tablet, mobile).
+Verify that the layout adjusts correctly to the screen size.
+Verify that all functionalities work as expected on each device.
+Expected Result: Website displays correctly and functions as expected on all devices.
+
+### Test Case: Navigation Links
+
+Description: Verify that all navigation links work correctly.
+Steps: Click on each navigation link in the menu.
+Verify that the user is redirected to the correct page.
+Verify that the content of the page matches the link description.
+Expected Result: Navigation links work correctly and redirect to the appropriate pages.
+
+
+# Deployment Instructions for Restaurant No1
+
+## Via Visual 
+
+Studio Create a GitHub Repository: Set up a new repository on GitHub for your project.
+Set Up Visual Studio Workspace: Open Visual Studio, and clone your GitHub repository to create a local workspace.
+Build and Deploy: Use the terminal in Visual Studio to run the necessary commands to build and deploy your website.
+Save Your Work: Save your work in the Visual Studio workspace, and use Git commands to add, commit, and push changes to GitHub.
+Install Dependencies: Ensure all required modules are listed in the requirements.txt file for smooth deployment.
+
+## Via GitHub
+
+Create a GitHub Account and Repository: Open GitHub, sign in, and create a new repository.
+Link Visual Studio Workspace: Use the repository link to set up a workspace in Visual Studio.
+Develop and Save: Develop your project in Visual Studio, and use Git commands to save and push your code to GitHub.
+
+## Via Heroku 
+
+Set Up Heroku Account: Sign up for Heroku, selecting appropriate options such as role (e.g., student) and development language (Python).
+Create Heroku App: Create a new app on Heroku, configuring necessary settings like app name and region.
+Configure Settings and Deploy: Set up config variables and deploy methods. Link to your GitHub repository, and deploy your app either manually or automatically. 
+Run and Test: After deployment, start or restart your app to ensure it is running correctly.
+Preparing Your Environment
+Create a Django Project and App: Set up your Django project and create necessary apps.
+Migrate and Test: Run migrations and test the server to ensure everything is set up correctly.
+Set Up External Database: Create a new database on ElephantSQL and link it to your project.
+Manage Static and Media Files: Use Cloudinary to store static and media files, and configure the settings accordingly.
+Finalize and Deploy: Make necessary adjustments in settings, create a Procfile, and deploy your project to Heroku.
+
+
+# Credits
+Django Project: Utilized the Django framework to build the core of the Restaurant No1 website.
+W3Schools Django Tutorial: Followed the comprehensive Django tutorial provided by W3Schools for foundational guidance and best practices.
+Python.org: Referenced official Python documentation and resources available at Python.org for language-specific details and advanced features.
 
 
 # Getting Started
