@@ -3,7 +3,7 @@
 The Restaurant Booking Website is a restaurant website that enables customers to book a table online.
 People who would like to book a table online in a restaurant would benefit from using this website.
 
-![Screenshot demonstrating website responsiveness on all screen sizes](#)
+![Screenshot demonstrating website responsiveness](/assets/readme_image/website_responsiveness.jpg)
 
 
 # Overview
@@ -107,7 +107,7 @@ It contains only 3 items, each has an image. The menu is presented with three op
 All meals and drinks images are fully responsive on all screen sizes.
 Below are screenshot of the restaurant menu.
 
-![Menu page](#)
+![Menu page](/assets/readme_image/menu_page.jpg)
 
 
 ## Contact page
@@ -188,7 +188,7 @@ Below are screenshots that depict the "My Bookings" form.
 
 ![My Bookings customer update alert successfully](/assets/readme_image/my_bookings_customer_update_alert_successfully.jpg)
 
-![My Bookings - already booked alert????](#)
+![My Bookings customer already booked alert](/assets/readme_image/my_bookings_customer_update_booking_alert_table_already_booked.jpg)
 
 ![My Bookings customer cancel booking successfully](/assets/readme_image/my_bookings_customer_cancel_booking_successfully.jpg)
 
@@ -219,9 +219,9 @@ Heroku CLI (for deployment)
 
 # Installation
 
-1. Clone the repository:
-   git clone https://github.com/ROCK3879/restaurant_booking_1.git
-   cd restaurant_booking
+1. Repository:
+   https://github.com/ROCK3879/restaurant_booking_1.git
+   
 2. Set up a virtual environment:
 
 ```bash
@@ -276,7 +276,7 @@ source env/bin/activate # On Windows use.
 ```
 
 8. Access the application:
-   Open your web browser and go to http://127.0.0.1:8000/
+   Open your web browser and go to https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/
 
 Database Model
 
