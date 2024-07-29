@@ -78,9 +78,10 @@ This section will allow a user to easily navigate from page to page.
 ## Home page
 
 The home page shows a close-up of a part of the restaurant with a blurry background and inscription "Welcome to Restaurant No1"
-"Experience the best food and drinks in town".
-Buttons
-"Our Menu" / "Log In" / "Register Now"
+"Experience the finest dining with us".
+Button: Log In, allows the user to access his account and the possibilities of booking a table, update and cancel.
+"Register for exculusive offers" 
+Button: Register Now,enables new users to register and after registration have the possibility of booking, updating and canceling a reservation.
 Below are screenshot of the home page.
 
 ![Home page](/assets/readme_image/home_page.jpg)
