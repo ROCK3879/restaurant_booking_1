@@ -612,7 +612,9 @@ Deployment on Heroku
 
 ```bash
 
-### Requirements.txt
+
+Requirements.txt
+
 asgiref==3.8.1
 dj-database-url==2.2.0
 Django==5.0.7
