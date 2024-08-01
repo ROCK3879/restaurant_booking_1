@@ -5,6 +5,11 @@ People who would like to book a table online in a restaurant would benefit from 
 
 ![Screenshot demonstrating website responsiveness](/assets/readme_image/website_responsiveness.jpg)
 
+## List of links
+- [GitHub Repo](https://github.com/ROCK3879/restaurant_booking_1)
+- [Live Link](https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com/)
+- [BACKLOG link](https://github.com/users/ROCK3879/projects/4/views/1)
+
 
 # Overview
 
