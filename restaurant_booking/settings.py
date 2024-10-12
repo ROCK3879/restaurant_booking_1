@@ -14,37 +14,29 @@ from pathlib import Path
 import os
 import django_heroku
 import dj_database_url
+from decouple import config
+import environ
+env = environ.Env(DEBUG=(bool, False))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+environ.Env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-u)2-q5$5t(+&^ef#s#%hadx29z%x*k&zirr*8nb*!!*49c)db2"
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['*']
+DEBUG = env("DEBUG")
+ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
+CORS_ALLOWED_ORIGINS = env("CORS_ALLOWED_ORIGINS").split(" ")
+
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # or cache, file, etc.
-SESSION_COOKIE_NAME = 'sessionid'
-
-# settings.py
-SESSION_COOKIE_HTTPONLY = False  # Allow JavaScript access (not recommended for production)
-CORS_ALLOW_CREDENTIALS = True
-
-ALLOWED_HOSTS = ['https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com',]
 
 
-CORS_ALLOWED_ORIGINS = [
-        "https://restaurant-booking-no1-ae7b2991e60d.herokuapp.com",
-    
-]
-
-CORS_ALLOW_CREDENTIALS = True
 # settings.py
 
 # URL prefix for static files
@@ -73,6 +65,7 @@ INSTALLED_APPS = [
 # myproject/settings.py
 
 MIDDLEWARE = [
+            'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -80,21 +73,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',  # This ensures request.user is available
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'user.middleware.SessionCheckMiddleware',  # Your custom middleware
 ]
 
-# MIDDLEWARE_CLASSES = [
-#         'corsheaders.middleware.CorsMiddleware',
-#     "django.middleware.security.SecurityMiddleware",
-#     "django.contrib.sessions.middleware.SessionMiddleware",
-#         'main.middleware.SessionCheckMiddleware',  # Add this line
 
-#     "django.middleware.common.CommonMiddleware",
-#     "django.middleware.csrf.CsrfViewMiddleware",
-#     "django.contrib.auth.middleware.AuthenticationMiddleware",
-#     "django.contrib.messages.middleware.MessageMiddleware",
-#     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-# ]
 
 ROOT_URLCONF = "restaurant_booking.urls"
 
@@ -118,17 +99,16 @@ WSGI_APPLICATION = "restaurant_booking.wsgi.application"
 
 
 # Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "d2n5d4av6r34ql",
-        "HOST":"cah8ha8ra8h8i7.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com",
-        "PORT":"5432",
-        "USER":"u1gffoua8qqnc5",
-        "PASSWORD":"p7d6406e806b7a05be6c4828cb19019bc7373fb724e4c4cf2500c60ab2a2fc91a",
-
+        "ENGINE":env("POSTGRES_ENGINE"),
+        "NAME": env('DB_NAME'),
+        "USER": env('DB_USER'),
+        "PASSWORD": env('DB_PASSWORD'),
+        "HOST": env('DB_HOST'),
+        "PORT": env('DB_PORT', default='5432'),
     }
 }
 
@@ -147,7 +127,7 @@ REST_FRAMEWORK = {
     ),
 }
 # Password validation
-# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -166,7 +146,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
+
 
 LANGUAGE_CODE = "en-us"
 
