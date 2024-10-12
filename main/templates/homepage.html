@@ -427,11 +427,11 @@
         <h1>Welcome to Restaurant No1</h1>
         <p>Experience the finest dining with us.</p>
         <div class="buttons">
-          <a href="#">Log In</a>
+          <a href="{% url 'customer_page' %}">Log In</a>
         </div>
         <div class="register-container">
           <span class="register-text">Register for exclusive offers</span>
-          <a href="#" class="register">Register Now</a>
+          <a  href="{% url 'customer_register' %}" class="register">Register Now</a>
         </div>
       </div>
     </div>
